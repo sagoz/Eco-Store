@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 100px;
+  color: #7C6A0A;
+  padding-right: 15px;
+}
+nav p {
+  font-size: 1.5em;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+nav .nav-icons-container {
+  display: flex;
+  gap: 15px;
+}
+nav .nav-icons-container button {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  width: auto;
+  color: #7C6A0A;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+}
+article h1 {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+article p {
+  padding-right: 150px;
+  line-height: 30px;
+  font-size: 1.5em;
+}
+article button {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+article button {
+  width: 200px;
+  padding: 15px;
+  margin-top: 30px;
+  border-style: none;
+  border-radius: 35px;
+  background: none;
+  background-color: #FA9500;
+  color: white;
+  font-size: 1em;
+}
+article button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+article img {
+  width: 25vw;
+  border-radius: 19px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 2em;
+}
+section .product-healthcare, section .info-location-container, section .info-gallery-container, section .info-about-us-container, section .product-furniture {
+  padding-bottom: 60px;
+}
+section .product-healthcare h2, section .info-location-container h2, section .info-gallery-container h2, section .info-about-us-container h2, section .product-furniture h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .product-healthcare .card--section, section .info-location-container .card--section, section .info-gallery-container .card--section, section .info-about-us-container .card--section, section .product-furniture .card--section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  row-gap: 80px;
+}
+section .product-healthcare .product-card, section .info-location-container .product-card, section .info-gallery-container .product-card, section .info-about-us-container .product-card, section .product-furniture .product-card {
+  width: 250px;
+  height: 390px;
+  padding: 20px;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+  border-radius: 8px;
+}
+section .product-healthcare .product-card .product-card--icon, section .info-location-container .product-card .product-card--icon, section .info-gallery-container .product-card .product-card--icon, section .info-about-us-container .product-card .product-card--icon, section .product-furniture .product-card .product-card--icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .product-healthcare .product-card .product-image, section .info-location-container .product-card .product-image, section .info-gallery-container .product-card .product-image, section .info-about-us-container .product-card .product-image, section .product-furniture .product-card .product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+section .product-healthcare .product-card .product-image img, section .info-location-container .product-card .product-image img, section .info-gallery-container .product-card .product-image img, section .info-about-us-container .product-card .product-image img, section .product-furniture .product-card .product-image img {
+  width: 250px;
+  height: 200px;
+  border-radius: 6px;
+}
+section .product-furniture .product-card {
+  background-color: #BABD8D;
+  color: white;
+}
+section .info-about-us-container {
+  padding-bottom: 60px;
+}
+section .info-about-us-container h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+section .info-mision-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+section .info-mision-container .about-us-earth, section .info-mision-container .about-us-innovation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30vw;
+  gap: 40px;
+}
+section .info-mision-container .about-us-earth p, section .info-mision-container .about-us-innovation p {
+  text-align: center;
+  color: #FA9500;
+  font-size: 30px;
+  font-weight: 500;
+}
+section .info-gallery-container {
+  padding-bottom: 60px;
+}
+section .info-gallery-container h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+section .styles-images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 55px;
+}
+section .styles-images-container img {
+  width: 400px;
+  height: 400px;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+}
+section .styles-images-container img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+section .info-location-container {
+  padding-bottom: 60px;
+}
+section .info-location-container .image-map {
+  width: 100%;
+}
+section .info-location-container .image-map img {
+  border-radius: 16px;
+  padding-bottom: 60px;
+}
+section .info-location-container h3 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #E86424;
+}
+section .info-location-container p {
+  font-size: 25px;
+  font-weight: 300;
+  color: #E86424;
+}
+
+footer {
+  background-color: #FA9500;
+  width: 100%;
+  height: auto;
+}
+footer h3 {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 30px;
+  color: white;
+}
+footer p {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 30px;
+  color: white;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
